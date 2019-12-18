@@ -1,0 +1,12 @@
+//flex布局复用
+@mixin flex($hov:space-between,$col:center){
+  display: flex;
+  justify-content: $hov;
+  align-items: $col;
+}
+//背景图
+@mixin bgImg($url:"",$size:contain){
+  display: inline-block;
+  background:url($url) no-repeat center;
+  background-size: $size;
+}
