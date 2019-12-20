@@ -2,7 +2,12 @@ import Vue from 'vue'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueLazyload from 'vue-lazyload'
 import App from './App.vue'
+
+Vue.use(VueLazyload, {
+  loading: '/imgs/loading-svg/loading-bars.svg',
+})
 // import env from './env'
 // mock开关
 // const mock = false;
